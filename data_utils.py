@@ -46,7 +46,7 @@ def load_tag(path):
     return tag2id, id2tag
 
 
-tokenizer = BertTokenizer.from_pretrained("E:/pretrained/bert-base-chinese")
+tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
 tag2id, id2tag = load_tag("./data/tag.txt")
 
 

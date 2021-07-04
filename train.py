@@ -30,7 +30,7 @@ def run(model_args: ModelArguments, data_args: DataArguments, args: OurTrainingA
     train_dataset = NERDataset(read_data(data_args.train_file))
     eval_dataset = NERDataset(read_data(data_args.dev_file))
     # 加载预训练模型
-    model = BertForNER.from_pretrained("E:/pretrained/bert-base-chinese", model_args=model_args)
+    model = BertForNER.from_pretrained("bert-base-chinese", model_args=model_args)
     # 初始化Trainer
     trainer = Trainer(model=model,
                       args=training_args,

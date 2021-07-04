@@ -74,6 +74,8 @@ def ner_metrics(eval_output: EvalPrediction) -> Dict[str, float]:
 
 
 if __name__ == "__main__":
+    pass
+    """
     examples = read_data("./data/train.txt")
     dataset = NERDataset(examples)
     print(dataset[0])
@@ -81,7 +83,8 @@ if __name__ == "__main__":
     batch = next(iter(dataloader))
     print(batch)
     model_args = ModelArguments(use_lstm=False)
-    model = BertForNER.from_pretrained("E:/pretrained/bert-base-chinese", model_args=model_args)
+    model = BertForNER.from_pretrained("bert-base-chinese", model_args=model_args)
     output = model(**batch)
     print(output)
+    """
 
